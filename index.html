@@ -11,7 +11,7 @@
     <header><!--cabeçario visual da página-->
         <h1>Florianópolis Turismo Certo</h1>
 
-        <nav><!--Seção de navegação do site.-->
+        <nav><!--Seção de navegação dos menus do site.-->
             <ul><!--Lista não ordenada do nosso menu-->
                 <li><a href="#florianopolis">Sobre mim</a> </li>
                 <!--digita toda essa papagaiada pra referenciar os links-->
@@ -50,7 +50,16 @@
 
     <section id= "regioes"><!--essa seção será para aprender a criar tabelasUsaremos os bairros e regiões-->
         <h2>Regiões</h2>
-        <table><!--taga de tabelas. dentro delas sera colocado o cabeçario, colunas e linhas-->
+        <head><!--tag inteira para deixar a tabela com linhas-->
+            <style>
+                table, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+                }
+            </style>
+        </head><!--o numero de px aumenta ou diminui a grossura da linha-->
+        <table style="width:70%"><!--taga de tabelas. dentro delas sera colocado o cabeçario, colunas e linhas.
+            style width se refere ao tamanho que a tabela oculpa horizontalmente na tela-->
             <thead><!--tag para cabeçario-->
                 
                 <tr><!--tag define uma nova linha-->
@@ -259,7 +268,7 @@
     
     
 
-    <footer><!--tag para rodapé-->
+    <footer><!--Define um rodapé para um documento ou uma seção-->
         <p>Direitos reservados ao desenvolvedor.</p>
         <section>
             <h2>Contato</h2>
